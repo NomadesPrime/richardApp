@@ -1,8 +1,8 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export const sobre = () => (
     <View>
-        <Text style={styles.titulo}>Boas vindas</Text>
+        <Text style={styles.titulo}>Sobre a banda:</Text>
     </View>
 );
 

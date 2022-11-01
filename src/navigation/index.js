@@ -2,6 +2,7 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { albun } from "../screens/albuns";
 import { home } from "../screens/home";
+import { sobre } from "../screens/sobre";
 
 //const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -43,7 +44,7 @@ export const RootNavigation = () => {
       />
       <Tab.Screen
         name="Sobre"
-        component={home}
+        component={sobre}
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="information-outline" color={color} size={26} />
