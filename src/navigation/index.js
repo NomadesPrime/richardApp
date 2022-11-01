@@ -26,9 +26,9 @@ export const RootNavigation = () => {
       <Tab.Screen
         name="Albuns"
         component={albun}
-        options={{
+        options={{ 
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="album" color={color} size={26} />
           ),
         }}
       />
@@ -37,7 +37,7 @@ export const RootNavigation = () => {
         component={home}
         options={{
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="newspaper-variant-multiple" color={color} size={26} />
           ),
         }}
       />
@@ -46,7 +46,7 @@ export const RootNavigation = () => {
         component={home}
         options={{
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="information-outline" color={color} size={26} />
           ),
         }}
       />
