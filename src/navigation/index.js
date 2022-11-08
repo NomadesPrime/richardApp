@@ -1,7 +1,8 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { albun } from "../screens/albuns";
 import { home } from "../screens/home";
+import { integrantes } from "../screens/integrantes";
+import { noticias } from "../screens/noticias";
 import { sobre } from "../screens/sobre";
 
 //const Stack = createNativeStackNavigator();
@@ -10,9 +11,9 @@ const Tab = createMaterialBottomTabNavigator();
 export const RootNavigation = () => {
   return (
     <Tab.Navigator
-      activeColor="#3e2465"
-      inactiveColor="#3e2465"
-      barStyle={{ backgroundColor: "#F0F8FF" }}
+      activeColor="#000000"
+      inactiveColor="#000000"
+      barStyle={{ backgroundColor: "#FFFFFF" }}
     >
       <Tab.Screen
         name="Home"
@@ -25,17 +26,17 @@ export const RootNavigation = () => {
       />
 
       <Tab.Screen
-        name="Albuns"
-        component={albun}
+        name="Integrantes"
+        component={integrantes}
         options={{ 
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="album" color={color} size={26} />
+            <MaterialCommunityIcons name="account" color={color} size={26} />
           ),
         }}
       />
       <Tab.Screen
         name="Noticias"
-        component={home}
+        component={noticias}
         options={{
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="newspaper-variant-multiple" color={color} size={26} />
